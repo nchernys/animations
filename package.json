@@ -9,18 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.0.4"
+    "@fortawesome/fontawesome-svg-core": "^6.7.1",
+    "@fortawesome/free-brands-svg-icons": "^6.7.1",
+    "@fortawesome/free-solid-svg-icons": "^6.7.1",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "gsap": "^3.12.5",
+    "install": "^0.13.0",
+    "next": "15.0.4",
+    "npm": "^10.9.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-horizontal-scrolling-menu": "^8.2.0",
+    "react-scroll-motion": "^0.3.3"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.4"
+    "eslint": "^8.57.1",
+    "eslint-config-next": "15.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.4.2",
+    "typescript": "^5"
   }
 }

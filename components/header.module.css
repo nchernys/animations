@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  margin: 0;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.navBar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.navList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.listItem {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.listItem a {
+  text-decoration: none;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.logoIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
