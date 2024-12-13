@@ -1,11 +1,13 @@
+"use client";
 import ProductList from "@/components/productList";
-import Box from "@/components/boxSection";
+import GiftCard from "@/components/giftCard";
 import FallCollection from "@/components/fallCollection";
 import SidebarMenu from "@/components/sidebarMenu";
-import { useEffect, useState, useRef } from "react";
+import MovingImages from "@/components/movingImages";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import styles from "./pages.module.css";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import styles from "./pages.module.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,8 +17,8 @@ export default function Home() {
     <>
     <SidebarMenu />
     <ProductList />
-    <Box />
-    <FallCollection />
+    <GiftCard />
+    <MovingImages />
     </>
   );
 }

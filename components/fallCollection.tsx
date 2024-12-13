@@ -6,13 +6,17 @@ import { useState, useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const images = [
+  "./images/clothes-group/clothes-5.jpg", "./images/clothes-group/clothes-6.jpg", "./images/clothes-group/clothes-7.jpg", "./images/clothes-group/clothes-8.jpg", "./images/clothes-group/clothes-9.jpg", "./images/clothes-group/clothes-10.jpg", "./images/clothes-group/clothes-11.jpg", "./images/clothes-group/clothes-12.jpg", "./images/clothes-group/clothes-13.jpg", "./images/clothes-group/clothes-14.jpg"
+]
+
 export default function FallCollection() {
   const fashionRef = useRef<HTMLDivElement>(null);
   const fashionContentRef = useRef<HTMLDivElement>(null);
-  const imageGroupRef = useRef<HTMLDivElement>(null);
-
+ 
   const cells = Array.from({ length: 100 }, (_, index) => index + 1);
   const blinds = Array.from({ length: 16 }, (_, index) => index + 1);
+
 
   useEffect(() => {
     const fashion = fashionRef.current;
@@ -64,8 +68,6 @@ export default function FallCollection() {
           },
         }
       );
-      
-
 
       tl.fromTo(
         fashionContent,
@@ -76,18 +78,7 @@ export default function FallCollection() {
           duration: .8, 
           ease: "elastic.out(1, .8)", 
           delay: 1 },
-      );
-      tl.fromTo(
-        imgs,
-        {opacity: 0},
-        {opacity: 1,
-            duration: .4,
-            ease: "power3.in",
-            stagger: .2,
-            delay: .5
-        }
-      );
-      
+      );      
     }
   }, []);
 
@@ -112,24 +103,12 @@ export default function FallCollection() {
       </div>
       <div className={styles.image}>
         <img src="./images/clothes-4.jpg" alt="" />
-
-        <div className={styles.imageGroup} ref={imageGroupRef}>
-            <img className={styles.img} src="./images/clothes-group/clothes-5.jpg" alt="" />
-            <img className={styles.img} src="./images/clothes-group/clothes-6.jpg" alt="" />
-            <img className={styles.img} src="./images/clothes-group/clothes-7.jpg" alt="" />
-            <img className={styles.img} src="./images/clothes-group/clothes-8.jpg" alt="" />
-            <img className={styles.img} src="./images/clothes-group/clothes-9.jpg" alt="" />
-            <img className={styles.img} src="./images/clothes-group/clothes-10.jpg" alt="" />
-            <img className={styles.img} src="./images/clothes-group/clothes-11.jpg" alt="" />
-            <img className={styles.img} src="./images/clothes-group/clothes-12.jpg" alt="" />
-            <img className={styles.img} src="./images/clothes-group/clothes-13.jpg" alt="" />
-            <img className={styles.img} src="./images/clothes-group/clothes-14.jpg" alt="" />
-        </div>
         <div className={styles.blinds}>
         {blinds.map((item, index) => (
             <span key={index} className={styles.blindsItem} style={{top: `${index * 2.2}rem`}}></span>
           ))}
         </div>
+       
       </div>
     </div>
   );

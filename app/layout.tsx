@@ -11,7 +11,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>My Next.js App</title>
+        <title>Animations & Visual Effects</title>
+        
       </head>
       <body>
         <Header />

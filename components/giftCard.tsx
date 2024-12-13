@@ -1,5 +1,5 @@
 "use client";
-import styles from "./boxSection.module.css";
+import styles from "./giftCard.module.css";
 import { useState, useEffect, useRef } from "react";
 import WaveSvg from "./waveSVG";
 import { gsap } from "gsap";
@@ -8,7 +8,7 @@ import Button from "./button";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Box() {
+export default function GiftCard() {
   const giftcardRef = useRef<HTMLDivElement>(null);
   const promoRef = useRef<HTMLDivElement>(null);
 
@@ -24,8 +24,8 @@ export default function Box() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: giftcard,
-          start: "center 100%",
-          end: "top center",
+          start: "top 40%",
+          end: "bottom top",
           toggleActions: "play none none none",
           markers: false,
         },
@@ -52,6 +52,7 @@ export default function Box() {
           ease: "power3.out",
           stagger: 0.2,
         },
+        "-=.5",
       );
 
       items.forEach((item) => {

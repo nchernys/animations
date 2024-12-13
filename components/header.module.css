@@ -1,24 +1,36 @@
 .header {
   width: 100%;
   margin: 0;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   box-sizing: border-box;
   z-index: 100;
+  height: 3rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navBar {
+.title {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 5rem;
+  font-weight: 600;
+}
+
+.navBar {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .navList {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 3rem;
 }
 

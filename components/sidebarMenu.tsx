@@ -112,32 +112,29 @@ export default function SidebarMenu() {
 
   return (
     <div className={styles.sidebarSection}>
-      <div
+          <div
         className={styles.sideBarTextContainer}
         onClick={() => setShowDropdown((prev) => !prev)}
       >
-        {/* Text SVG */}
         <div
           className={`${styles.svgContainer} svg-container`}
           dangerouslySetInnerHTML={{ __html: svgContent }}
         ></div>
 
-        {/* Arrow SVG */}
         <div
           className={`${styles.arrow} svg-container-arrow`}
           dangerouslySetInnerHTML={{ __html: svgContentArrow }}
         ></div>
       </div>
 
-      {/* Dropdown Links */}
       {showDropdown && (
         <div className={styles.sideBar} ref={sideBarRef}>
           <div className={styles.dropdownMenu} ref={linkListRef}>
-            <div className={styles.link}>Women's Clothes</div>
-            <div className={styles.link}>Men's Clothes</div>
-            <div className={styles.link}>Kid's Clothes</div>
-            <div className={styles.link}>Accessories</div>
-            <div className={styles.link}>Shoes</div>
+            <div className={styles.link}>Chocolate Ice-Cream</div>
+            <div className={styles.link}>Vanilla Ice-Cream</div>
+            <div className={styles.link}>Strawberry Ice-Cream</div>
+            <div className={styles.link}>Cherry Ice-Cream</div>
+            <div className={styles.link}>Mocha Ice-Cream</div>
           </div>
         </div>
       )}
