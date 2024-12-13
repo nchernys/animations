@@ -4,7 +4,6 @@ import { useRef, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStumbleupon } from "@fortawesome/free-brands-svg-icons";
 
-
 export default function Header() {
   const linkListRef = useRef<HTMLDivElement>(null);
 
@@ -13,10 +12,7 @@ export default function Header() {
       {/* Header */}
       <header className={styles.header}>
         <div className={styles.title}>Animations & Visual Effects</div>
-        
       </header>
-
-    
     </>
   );
 }

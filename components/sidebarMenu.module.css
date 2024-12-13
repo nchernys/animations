@@ -4,7 +4,11 @@
   height: auto;
   padding: 3rem 1rem;
   background-color: rgb(240, 197, 7);
-  background-image: linear-gradient(to right, rgb(215, 114, 154), rgb(163, 129, 238));
+  background-image: linear-gradient(
+    to right,
+    rgb(215, 114, 154),
+    rgb(163, 129, 238)
+  );
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -14,21 +18,21 @@
 }
 
 .sideBarTextContainer {
-    width: 45%;
-    padding: 0;
-    height: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    cursor: pointer;
+  width: 45%;
+  padding: 0;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .svgContainer {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .svgContainer path {
@@ -47,93 +51,90 @@
   stroke: white;
 }
 
-
 .dropdownMenu {
-    top: 0;
-    left: 0;
-    width: auto;
-    height: auto;
-    z-index: 10;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .dropdownMenu .link {
-    font-size: 1rem;
-    font-weight: 300;
-    list-style: none;
-    margin: 1rem 0;
-    background-color: rgb(228, 15, 161);
-    color: white;
-    border-radius: 2rem;
-    padding: 1.5rem 1.5rem;
-    text-align: center;
-    opacity: 0;
-    width: 10rem;
-    box-shadow: 5px 40px 50px rgba(0, 0, 0, 0.95);
-    cursor: pointer;
-  }
-  
-  .dropdownMenu .link:hover {
-    background-color: rgb(255, 204, 0);
-    color: inherit;
-  }
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
 
-  .dropdownMenu .link:nth-of-type(1),
-  .dropdownMenu .link:nth-of-type(5) {
-    transform: translateX(0);
-  }
-  
-  .dropdownMenu .link:nth-of-type(2),
-  .dropdownMenu .link:nth-of-type(4) {
-    transform: translateX(2.5rem);
-  }
-  
-  .dropdownMenu .link:nth-of-type(3) {
-    transform: translateX(4rem);
-  }
-  
-  .sideBar {
-    position: absolute;
-    left: -65rem;
-    top: -52%;
-    width: 80rem;
-    height: 80rem;
-    padding: 4.5rem 1rem;
-    background-color: rgba(255, 255, 255, 0);
-    background-image: radial-gradient(
-    circle, 
-    rgba(255, 255, 255, 1) 0%,   /* Solid white at the center */
-    rgba(255, 255, 255, 0) 70%  /* Fully transparent at the edges */
+.dropdownMenu .link {
+  font-size: 1rem;
+  font-weight: 300;
+  list-style: none;
+  margin: 1rem 0;
+  background-color: rgb(228, 15, 161);
+  color: white;
+  border-radius: 2rem;
+  padding: 1.5rem 1.5rem;
+  text-align: center;
+  opacity: 0;
+  width: 10rem;
+  box-shadow: 5px 40px 50px rgba(0, 0, 0, 0.95);
+  cursor: pointer;
+}
+
+.dropdownMenu .link:hover {
+  background-color: rgb(255, 204, 0);
+  color: inherit;
+}
+
+.dropdownMenu .link:nth-of-type(1),
+.dropdownMenu .link:nth-of-type(5) {
+  transform: translateX(0);
+}
+
+.dropdownMenu .link:nth-of-type(2),
+.dropdownMenu .link:nth-of-type(4) {
+  transform: translateX(2.5rem);
+}
+
+.dropdownMenu .link:nth-of-type(3) {
+  transform: translateX(4rem);
+}
+
+.sideBar {
+  position: absolute;
+  left: -65rem;
+  top: -52%;
+  width: 80rem;
+  height: 80rem;
+  padding: 4.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    /* Solid white at the center */ rgba(255, 255, 255, 0) 70%
+      /* Fully transparent at the edges */
   );
-    z-index: 100;
-    box-sizing: border-box;
-    opacity: 0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
+  z-index: 100;
+  box-sizing: border-box;
+  opacity: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: 767px) {
+  .sidebarSection {
+    padding: 0;
     justify-content: flex-end;
+    align-items: center;
   }
-  
 
-  @media screen and (min-width: 767px) {
-
-    .sidebarSection {
-      padding: 0;
-      justify-content: flex-end;
-      align-items: center;
-    }
-
-    
-    .sideBar {
-      left: -60rem;
-    }
-
-    .sideBarTextContainer {
-      width: 55%;
-      padding: 0 20% 0 0;
-    }
+  .sideBar {
+    left: -60rem;
   }
+
+  .sideBarTextContainer {
+    width: 55%;
+    padding: 0 20% 0 0;
+  }
+}

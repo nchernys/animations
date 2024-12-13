@@ -12,13 +12,12 @@ import styles from "./pages.module.css";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-
   return (
     <>
-    <SidebarMenu />
-    <ProductList />
-    <GiftCard />
-    <MovingImages />
+      <SidebarMenu />
+      <ProductList />
+      <GiftCard />
+      <MovingImages />
     </>
   );
 }

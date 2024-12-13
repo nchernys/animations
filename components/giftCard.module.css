@@ -161,17 +161,17 @@
 
 @media screen and (min-width: 375px) {
   .wave1 svg,
-.wave2 svg {
-  position: absolute;
-  top: -4rem;
-}
+  .wave2 svg {
+    position: absolute;
+    top: -4rem;
+  }
 }
 
 @media screen and (min-width: 600px) {
   .wave1 svg,
   .wave2 svg {
-  position: absolute;
-  top: -6rem;
+    position: absolute;
+    top: -6rem;
   }
 
   .glowContainer {
@@ -185,18 +185,17 @@
 @media screen and (min-width: 700px) {
   .wave1 svg,
   .wave2 svg {
-  position: absolute;
-  top: -7rem;
+    position: absolute;
+    top: -7rem;
   }
 }
 
 @media screen and (min-width: 1000px) {
-
   .section {
     flex-direction: row;
     padding: 10rem 4rem;
   }
-  
+
   .glowContainer {
     width: 35rem;
     height: 25rem;
@@ -207,12 +206,11 @@
 
   .wave1 svg,
   .wave2 svg {
-  position: absolute;
-  top: -6rem;
+    position: absolute;
+    top: -6rem;
   }
 
   .promo {
     width: 50%;
   }
-
 }

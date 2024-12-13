@@ -10,7 +10,6 @@ export default function SidebarMenu() {
   const linkListRef = useRef<HTMLDivElement>(null);
   const sideBarRef = useRef<HTMLDivElement>(null);
 
-  // Animate Dropdown Links and Sidebar
   useEffect(() => {
     if (showDropdown && linkListRef.current && sideBarRef.current) {
       const sideBar = sideBarRef.current;
@@ -39,7 +38,6 @@ export default function SidebarMenu() {
     }
   }, [showDropdown]);
 
-  // Fetch the SVG Text
   useEffect(() => {
     const fetchSvgText = async () => {
       try {
@@ -70,41 +68,46 @@ export default function SidebarMenu() {
   useEffect(() => {
     if (svgContent) {
       requestAnimationFrame(() => {
-        const paths = Array.from(document.querySelectorAll(`.svg-container path`)).reverse();
-        const arrowPaths = document.querySelectorAll(`.svg-container-arrow path`);
-  
+        const paths = Array.from(
+          document.querySelectorAll(`.svg-container path`),
+        ).reverse();
+        const arrowPaths = document.querySelectorAll(
+          `.svg-container-arrow path`,
+        );
+
         paths.forEach((path) => {
-          const pathLength = path.getTotalLength();
+          const pathElement = path as SVGPathElement;
+          const pathLength = pathElement.getTotalLength();
           gsap.set(path, {
             strokeDasharray: pathLength,
             strokeDashoffset: pathLength,
             stroke: "#fff",
-            strokeWidth: .2,
+            strokeWidth: 0.2,
             fill: "#fff",
             fillOpacity: 0,
           });
         });
-  
+
         arrowPaths.forEach((arPath) => {
-          const pathLength = arPath.getTotalLength();
+          const pathElement = arPath as SVGPathElement;
+          const pathLength = pathElement.getTotalLength();
           gsap.set(arPath, {
             strokeDasharray: pathLength,
             strokeDashoffset: pathLength,
             stroke: "#fff",
-            strokeWidth: .2,
+            strokeWidth: 0.2,
             fill: "#fff",
             fillOpacity: 0,
           });
         });
-  
+
         const tl = gsap.timeline();
         tl.to([...paths, ...arrowPaths], {
           strokeDashoffset: 0,
-          duration: .3,
+          duration: 0.3,
           ease: "power2.out",
           stagger: 0.1,
           fillOpacity: 1,
-
         });
       });
     }
@@ -112,7 +115,7 @@ export default function SidebarMenu() {
 
   return (
     <div className={styles.sidebarSection}>
-          <div
+      <div
         className={styles.sideBarTextContainer}
         onClick={() => setShowDropdown((prev) => !prev)}
       >

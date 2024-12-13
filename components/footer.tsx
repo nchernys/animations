@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 import styles from "./footer.module.css";
 
 export default function Footer() {
@@ -12,8 +12,13 @@ export default function Footer() {
         textAlign: "center",
       }}
     >
-      <p > Return to <Link href={`https://nchernysheva.com`}>Natalia Chernysheva's Portfolio
-      </Link></p>
+      <p>
+        {" "}
+        Return to{" "}
+        <Link href={`https://nchernysheva.com`}>
+          Natalia Chernysheva&#39;s Portfolio
+        </Link>
+      </p>
     </footer>
   );
 }

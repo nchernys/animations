@@ -12,7 +12,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Animations & Visual Effects</title>
-        
       </head>
       <body>
         <Header />
