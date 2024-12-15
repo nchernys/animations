@@ -24,6 +24,8 @@ export default function MovingImages() {
 
   const createLayers = Array.from({ length: 3 }, (_, index) => index + 1);
 
+  const angle = ["-15deg", "0deg", "5deg", "-10deg", "0deg", "15deg"];
+
   useEffect(() => {
     const sectionPin = sectionPinRef.current;
     const section = sectionRef.current;
@@ -41,6 +43,9 @@ export default function MovingImages() {
           scrub: true,
           pin: true,
           markers: false,
+          onEnter: () => {
+            ScrollTrigger.refresh();
+          },
         },
       });
 
@@ -53,10 +58,12 @@ export default function MovingImages() {
       imagesRef.current.forEach((image, index) => {
         tl.fromTo(
           image,
-          { opacity: 0, scale: 5 },
+          { opacity: 0, scale: 5, rotate: "15deg", y: 0 },
           {
             opacity: 1,
             scale: 1,
+            y: index === 1 || index === 3 ? "-2rem" : "0",
+            rotate: angle[index],
             duration: 5,
             ease: "power2.out",
           },
@@ -81,12 +88,14 @@ export default function MovingImages() {
                 imagesRef.current[index] = el!;
               }}
             >
-              <img
-                key={index}
-                className={styles.img}
-                src={src}
-                alt={`clothes-${index}`}
-              />
+              <div className={styles.innerWrapper}>
+                <img
+                  key={index}
+                  className={styles.img}
+                  src={src}
+                  alt={`clothes-${index}`}
+                />
+              </div>
             </div>
           ))}
         </div>

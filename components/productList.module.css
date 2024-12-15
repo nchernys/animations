@@ -1,7 +1,7 @@
 .container {
   width: 100vw;
   min-height: 40rem;
-  height: auto;
+  height: 100%;
   padding: 6rem 0;
   display: flex;
   flex-direction: column;
@@ -10,6 +10,7 @@
   box-shadow: inset;
   position: relative;
   box-sizing: border-box;
+  margin-bottom: 2rem;
 }
 
 .container::after {
@@ -43,6 +44,7 @@
   position: relative;
   padding: 1.5rem 0;
   color: #000;
+  line-height: 2;
 }
 
 .underline {
@@ -51,7 +53,7 @@
 
 .underline::after {
   content: url('/images/underline-2.svg');
-  top: 70%;
+  top: 60%;
   left: -70%;
   width: 80%;
   height: 100%;
