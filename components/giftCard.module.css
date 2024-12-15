@@ -8,6 +8,20 @@
   padding: 10rem 1rem;
   gap: 4rem;
   background-color: #ffe5ec;
+  position: relative;
+}
+
+.section::after {
+  content: '3';
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  top: 1rem;
+  right: 0;
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgba(130, 130, 130, 0.3);
+  font-family: "Emilys Candy";
 }
 
 .glowContainer {
@@ -193,6 +207,8 @@
   .section {
     flex-direction: row;
     padding: 10rem 4rem;
+    display: flex;
+    align-items: center;
   }
 
   .glowContainer {

@@ -164,7 +164,10 @@ export default function ProductList() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h2>Click a card to view the product details!</h2>
+        <h2>
+          Click a <span className={styles.underline}>card</span> to view the
+          product details!
+        </h2>
       </div>
 
       <div className={styles.leftArrow}>

@@ -59,7 +59,7 @@ const options = {
     },
     title: {
       display: true,
-      text: "Company Growth'2023",
+      text: "Company's Growth",
     },
   },
   font: {

@@ -84,7 +84,7 @@ const ScatterChart = () => {
       },
       title: {
         display: true,
-        text: "Scatter Chart Example",
+        text: "Sports & Foods by Age",
       },
     },
     scales: {

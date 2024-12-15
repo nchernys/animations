@@ -2,6 +2,7 @@ import "./globals.css";
 import React from "react";
 import Header from "@/components/navigation/header";
 import Footer from "@/components/navigation/footer";
+import Cursor from "@/components/cursor";
 
 export default function RootLayout({
   children,
@@ -14,6 +15,7 @@ export default function RootLayout({
         <title>Animations & Visual Effects</title>
       </head>
       <body>
+        <Cursor />
         <Header />
         <main className='main'> {children}</main>
         <Footer />

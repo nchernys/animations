@@ -82,7 +82,7 @@ export default function SidebarMenu() {
             strokeDasharray: pathLength,
             strokeDashoffset: pathLength,
             stroke: "#fff",
-            strokeWidth: 0.2,
+            strokeWidth: 0.5,
             fill: "#fff",
             fillOpacity: 0,
           });
@@ -95,7 +95,7 @@ export default function SidebarMenu() {
             strokeDasharray: pathLength,
             strokeDashoffset: pathLength,
             stroke: "#fff",
-            strokeWidth: 0.2,
+            strokeWidth: 0.5,
             fill: "#fff",
             fillOpacity: 0,
           });

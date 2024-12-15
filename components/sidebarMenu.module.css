@@ -17,6 +17,19 @@
   box-sizing: border-box;
 }
 
+.sidebarSection::after {
+  content: '1';
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  top: 1rem;
+  right: 0;
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: "Emilys Candy";
+}
+
 .sideBarTextContainer {
   width: 45%;
   padding: 0;
@@ -27,7 +40,6 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  cursor: pointer;
 }
 
 .svgContainer {

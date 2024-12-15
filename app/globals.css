@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Barrio&family=Hachi+Maru+Pop&family=Kablammo&family=Monofett&family=Quicksand:wght@300..700&family=Teko:wght@300..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Barrio&family=Hachi+Maru+Pop&family=Kablammo&family=Monofett&family=Quicksand:wght@300..700&family=Teko:wght@300..700&family=Monoton&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Emilys+Candy&display=swap');
+
+
 
 :root {
   --background: #ffffff;

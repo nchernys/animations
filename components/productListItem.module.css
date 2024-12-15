@@ -7,7 +7,6 @@
   overflow: visible;
   transition: 500ms ease-out;
   transform: scale(1);
-  cursor: pointer;
 }
 
 .box::before {

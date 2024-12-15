@@ -21,7 +21,7 @@ const options = {
     },
     title: {
       display: true,
-      text: "Partners'2023",
+      text: "Key Partners",
     },
   },
 };

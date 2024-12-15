@@ -13,10 +13,6 @@ const images = [
   "./images/clothes-group/clothes-8.jpg",
   "./images/clothes-group/clothes-9.jpg",
   "./images/clothes-group/clothes-10.jpg",
-  "./images/clothes-group/clothes-11.jpg",
-  "./images/clothes-group/clothes-12.jpg",
-  "./images/clothes-group/clothes-13.jpg",
-  "./images/clothes-group/clothes-14.jpg",
 ];
 
 export default function MovingImages() {
@@ -48,6 +44,12 @@ export default function MovingImages() {
         },
       });
 
+      tl.fromTo(
+        title,
+        { opecity: 0, scale: 5 },
+        { opacity: 1, scale: 1, duration: 5, ease: "power1.out" }
+      );
+
       imagesRef.current.forEach((image, index) => {
         tl.fromTo(
           image,
@@ -61,29 +63,15 @@ export default function MovingImages() {
           `+=${0.2}`
         );
       });
-
-      tl.fromTo(
-        overlay,
-        { opacity: 0 },
-        {
-          opacity: 0.5,
-          duration: 1,
-          ease: "power1.out",
-          stagger: 1,
-        }
-      );
-
-      tl.fromTo(
-        title,
-        { opecity: 0, scale: 5 },
-        { opacity: 1, scale: 1, duration: 5, ease: "power1.out" }
-      );
     }
   }, []);
 
   return (
     <section className={styles.sectionWrapperPin} ref={sectionPinRef}>
       <section className={styles.sectionContainer} ref={sectionRef}>
+        <div ref={titleRef} className={styles.articleTitle}>
+          The New Era of Style: Where Timeless Elegance Meets Bold Innovation
+        </div>
         <div className={styles.imageGroup}>
           {images.map((src, index) => (
             <div
@@ -100,15 +88,6 @@ export default function MovingImages() {
                 alt={`clothes-${index}`}
               />
             </div>
-          ))}
-        </div>
-        <div ref={titleRef} className={styles.articleTitle}>
-          The New Era of Style: Where Timeless Elegance Meets Bold Innovation
-        </div>
-
-        <div ref={overlayRef} className={styles.overlay}>
-          {createLayers.map((layer, index) => (
-            <div key={index} className={styles.layer}></div>
           ))}
         </div>
       </section>
