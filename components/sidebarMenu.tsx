@@ -23,7 +23,7 @@ export default function SidebarMenu() {
           duration: 0.8,
           ease: "power3.out",
           stagger: 0.2,
-        },
+        }
       );
       gsap.fromTo(
         sideBar,
@@ -33,7 +33,7 @@ export default function SidebarMenu() {
           opacity: 1,
           duration: 0.8,
           ease: "power3.out",
-        },
+        }
       );
     }
   }, [showDropdown]);
@@ -69,10 +69,10 @@ export default function SidebarMenu() {
     if (svgContent) {
       requestAnimationFrame(() => {
         const paths = Array.from(
-          document.querySelectorAll(`.svg-container path`),
+          document.querySelectorAll(`.svg-container path`)
         ).reverse();
         const arrowPaths = document.querySelectorAll(
-          `.svg-container-arrow path`,
+          `.svg-container-arrow path`
         );
 
         paths.forEach((path) => {

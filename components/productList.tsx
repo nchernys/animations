@@ -102,7 +102,7 @@ export default function ProductList() {
             end: "top top",
             toggleActions: "play none none none",
           },
-        },
+        }
       );
     }
   }, []);
@@ -115,19 +115,19 @@ export default function ProductList() {
       gsap.fromTo(
         detailsRef.current,
         { opacity: 0, yPercent: -50, scale: 0.1 },
-        { opacity: 1, yPercent: 0, scale: 1, duration: 1, ease: "power2.out" },
+        { opacity: 1, yPercent: 0, scale: 1, duration: 1, ease: "power2.out" }
       );
 
       gsap.fromTo(
         image,
         { opacity: 0, xPercent: 10 },
-        { opacity: 1, xPercent: 0, duration: 1, ease: "power2.out" },
+        { opacity: 1, xPercent: 0, duration: 1, ease: "power2.out" }
       );
 
       gsap.fromTo(
         details,
         { opacity: 0, xPercent: -10 },
-        { opacity: 1, xPercent: 0, duration: 1, ease: "power2.out" },
+        { opacity: 1, xPercent: 0, duration: 1, ease: "power2.out" }
       );
     }
   }, [currentProduct]);
@@ -181,7 +181,11 @@ export default function ProductList() {
       </div>
       <div ref={containerRef} className={styles.listContainer}>
         {items.map((item, index) => (
-          <div key={index} className="productBox" onClick={() => handleShowDetails(index)}>
+          <div
+            key={index}
+            className='productBox'
+            onClick={() => handleShowDetails(index)}
+          >
             <ProductListItem
               key={index}
               image={item.image}
@@ -194,7 +198,7 @@ export default function ProductList() {
       {currentProduct >= 0 && (
         <div ref={detailsRef} className={styles.productDetails}>
           <div className={styles.image}>
-            <img src={items[currentProduct].image} alt="image" />
+            <img src={items[currentProduct].image} alt='image' />
           </div>
           <div className={styles.details}>
             <h2 className={styles.productTitle}>

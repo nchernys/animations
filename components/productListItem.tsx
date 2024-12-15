@@ -44,8 +44,8 @@ export default function ProductListItem({
           <img
             className={styles.icon}
             style={{ opacity: hover ? "1" : "0" }}
-            src="./icons/look-4.gif"
-            alt="surprise--v2"
+            src='./icons/look-4.gif'
+            alt='surprise--v2'
           />
         </div>
       </div>

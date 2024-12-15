@@ -58,25 +58,25 @@ export default function MovingImages() {
             duration: 5,
             ease: "power2.out",
           },
-          `+=${0.2}`,
+          `+=${0.2}`
         );
       });
 
       tl.fromTo(
         overlay,
-        { width: "0" },
+        { opacity: 0 },
         {
-          width: "100%",
-          duration: 10,
-          ease: "expo.out",
+          opacity: 0.5,
+          duration: 1,
+          ease: "power1.out",
           stagger: 1,
-        },
+        }
       );
 
       tl.fromTo(
         title,
         { opecity: 0, scale: 5 },
-        { opacity: 1, scale: 1, duration: 5, ease: "power1.out" },
+        { opacity: 1, scale: 1, duration: 5, ease: "power1.out" }
       );
     }
   }, []);
@@ -86,7 +86,8 @@ export default function MovingImages() {
       <section className={styles.sectionContainer} ref={sectionRef}>
         <div className={styles.imageGroup}>
           {images.map((src, index) => (
-            <div key={index}
+            <div
+              key={index}
               className={styles.imageWrapper}
               ref={(el) => {
                 imagesRef.current[index] = el!;

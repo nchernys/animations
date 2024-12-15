@@ -39,7 +39,7 @@ export default function GiftCard() {
           opacity: 1,
           duration: 1,
           ease: "power3.out",
-        },
+        }
       );
 
       tl.fromTo(
@@ -52,13 +52,13 @@ export default function GiftCard() {
           ease: "power3.out",
           stagger: 0.2,
         },
-        "-=.5",
+        "-=.5"
       );
 
       items.forEach((item) => {
         const contentText = item.querySelectorAll(`.${styles.animatedText}`);
         const contentTextBottom = item.querySelector(
-          `.${styles.animatedTextBottom}`,
+          `.${styles.animatedTextBottom}`
         );
 
         contentText.forEach((text) => {
@@ -71,7 +71,7 @@ export default function GiftCard() {
                 duration: 1,
                 ease: "power3.out",
               },
-              "-=.3", // Correct relative positioning inside the method
+              "-=.3" // Correct relative positioning inside the method
             );
           }
         });
@@ -85,9 +85,9 @@ export default function GiftCard() {
                 transform: "scale(1)",
                 duration: 0.85,
                 ease: "elastic.out(1, 0.5)",
-              },
+              }
             ),
-            `-=${0.3}`,
+            `-=${0.3}`
           );
         }
       });
@@ -100,7 +100,7 @@ export default function GiftCard() {
           duration: 0.5,
           ease: "power3.out",
           stagger: 0.2,
-        },
+        }
       );
 
       tl.fromTo(
@@ -112,7 +112,7 @@ export default function GiftCard() {
           duration: 0.5,
           ease: "elastic.out(1, 0.5)",
           stagger: 0.2,
-        },
+        }
       );
     }
   }, []);
@@ -122,13 +122,13 @@ export default function GiftCard() {
       <div className={styles.glowContainer}>
         <div className={styles.sliderSection} ref={giftcardRef}>
           <div className={styles.wave1}>
-            <WaveSvg color="#fb6f92" />
+            <WaveSvg color='#fb6f92' />
           </div>
           <div className={styles.wave2}>
-            <WaveSvg color="#ff8fab" />
+            <WaveSvg color='#ff8fab' />
           </div>
           <div className={styles.image}>
-            <img src="./images/headphones-2.png" alt="" />
+            <img src='./images/headphones-2.png' alt='' />
           </div>
           <div className={styles.contentText}>
             <div className={`${styles.title} ${styles.animatedText}`}>
@@ -179,7 +179,7 @@ export default function GiftCard() {
             <span className={styles.span}>Card! </span>
           </div>
         </div>
-        <Button color="#8935ff" shadow="#8935ff">
+        <Button color='#8935ff' shadow='#8935ff'>
           Shop
         </Button>
       </div>

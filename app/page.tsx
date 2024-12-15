@@ -1,7 +1,8 @@
 "use client";
 import ProductList from "@/components/productList";
 import GiftCard from "@/components/giftCard";
-import FallCollection from "@/components/fallCollection";
+import Chart from "@/components/chart";
+import FallCollection from "@/components/old/fallCollection";
 import SidebarMenu from "@/components/sidebarMenu";
 import MovingImages from "@/components/movingImages";
 import { useEffect, useRef } from "react";
@@ -15,8 +16,9 @@ export default function Home() {
   return (
     <>
       <SidebarMenu />
-      <ProductList />
+      <Chart />
       <GiftCard />
+      <ProductList />
       <MovingImages />
     </>
   );

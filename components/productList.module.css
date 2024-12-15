@@ -6,10 +6,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
   overflow: hidden;
   box-shadow: inset;
   position: relative;
+  box-sizing: border-box;
 }
 
 .container .header {
@@ -33,7 +33,7 @@
   width: 100%;
   height: 100%;
   overflow-x: auto;
-  padding: 3rem;
+  padding: 3rem 3rem 8rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -189,5 +189,13 @@
 
   .productDetails .details {
     width: 50%;
+  }
+
+  .leftArrow {
+    left: 1rem;
+  }
+
+  .rightArrow {
+    right: 2rem;
   }
 }

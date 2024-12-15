@@ -32,11 +32,11 @@ export default function FallCollection() {
 
     if (fashion && fashionContent) {
       const blinds = gsap.utils.toArray(
-        `.${styles.blindsItem}`,
+        `.${styles.blindsItem}`
       ) as HTMLElement[];
       const imgs = gsap.utils.toArray(`.${styles.img}`) as HTMLElement[];
       const cellsCollapse = gsap.utils.toArray(
-        `.${styles.cell}`,
+        `.${styles.cell}`
       ) as HTMLElement[];
 
       const tl = gsap.timeline({
@@ -75,7 +75,7 @@ export default function FallCollection() {
             ease: "none",
             amount: 0.6,
           },
-        },
+        }
       );
 
       tl.fromTo(
@@ -87,7 +87,7 @@ export default function FallCollection() {
           duration: 0.8,
           ease: "elastic.out(1, .8)",
           delay: 1,
-        },
+        }
       );
     }
   }, []);
@@ -112,7 +112,7 @@ export default function FallCollection() {
         </div>
       </div>
       <div className={styles.image}>
-        <img src="./images/clothes-4.jpg" alt="" />
+        <img src='./images/clothes-4.jpg' alt='' />
         <div className={styles.blinds}>
           {blinds.map((item, index) => (
             <span
