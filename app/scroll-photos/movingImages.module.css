@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Barrio&family=Hachi+Maru+Pop&family=Kablammo&family=Monofett&family=Quicksand:wght@300..700&family=Teko:wght@300..700&display=swap");
+
+.sectionWrapperPin {
+  position: relative;
+  overflow: hidden;
+}
+
+.sectionContainer {
+  width: 100%;
+  height: 100vh;
+  min-height: 40rem;
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  background-color: rgb(104, 23, 41);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+}
+
+.sectionContainer::after {
+  content: 'scroll me';
+  position: absolute;
+  width: 10rem;
+  height: 4rem;
+  top: 3rem;
+  right: -4rem;
+  font-size: 2rem;
+  font-weight: 200;
+  color: #ffffff4d;
+  font-family: "Quicksand", sans-serif;
+  transform: rotate(-90deg);
+}
+
+.sectionContainer::before {
+  content: "The New Era of Style: Where Timeless Elegance Meets Bold Innovation.";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-family: "Kablammo", system-ui;
+  color: rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  text-align: center;
+  transform: rotate(-15deg);
+
+}
+
+.imageGroup {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 0 1rem 0 ;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.imageWrapper {
+  transform: scale(5);
+  width: 100%;
+  height: 70%;
+  max-width: 25rem;
+  opacity: 0;
+  overflow: hidden;
+  margin: 3px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: .2rem;
+  border-radius: 1rem;
+  position: absolute;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.333);
+}
+
+.innerWrapper {
+  width: 100%;
+  height: 90%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center -1rem;
+}
+
+.articleTitle {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  line-height: 1.5;
+  transform: scale(5);
+  font-size: calc(2.2rem + 3vw);
+  color: white;
+  font-family: "Kablammo", system-ui;
+  box-sizing: border-box;
+  will-change: transform, opacity;
+  transform-origin: center;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 767px) {
+
+  .imageGroup {
+    width: 60%;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+  }
+
+  .imageWrapper {
+    width: 27%;
+    height: 48%;
+    position: relative;
+  }
+
+  .articleTitle {
+    position: relative;
+    font-size: calc(2rem + 1.5vw);
+    width: 40%;
+    padding: 0 1rem 0 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .articleTitle {
+    font-size: calc(2.3rem + 1.5vw);
+  }
+}
