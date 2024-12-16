@@ -6,4 +6,4 @@
 - developed scroll-linked animations to trigger dynamic visual effects as users navigate through the page
 - visualized dynamic data using Chart.js
 
-<img src="public/images/animations.jpg" alt="Project Animations" width="200px" />
+<img src="public/images/animations.jpg" alt="Project Animations" width="500px" style="padding: 50px" />
