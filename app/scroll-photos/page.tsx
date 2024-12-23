@@ -8,12 +8,12 @@ import ReturnHome from "../components/return-home/returnHome";
 gsap.registerPlugin(ScrollTrigger);
 
 const images = [
-  "./images/clothes-group/clothes-5.jpg",
-  "./images/clothes-group/clothes-6.jpg",
-  "./images/clothes-group/clothes-7.jpg",
-  "./images/clothes-group/clothes-8.jpg",
-  "./images/clothes-group/clothes-9.jpg",
-  "./images/clothes-group/clothes-10.jpg",
+  "/images/clothes-group/clothes-5.jpg",
+  "/images/clothes-group/clothes-6.jpg",
+  "/images/clothes-group/clothes-7.jpg",
+  "/images/clothes-group/clothes-8.jpg",
+  "/images/clothes-group/clothes-9.jpg",
+  "/images/clothes-group/clothes-10.jpg",
 ];
 
 export default function MovingImages() {
@@ -95,7 +95,7 @@ export default function MovingImages() {
                 <div className={styles.innerWrapper}>
                   <img
                     key={index}
-                    className={styles.img}
+                    className={styles.Image}
                     src={src}
                     alt={`clothes-${index}`}
                   />

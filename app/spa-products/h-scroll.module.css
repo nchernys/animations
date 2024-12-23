@@ -1,0 +1,348 @@
+.pageWrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.containerWrapper {
+    height: 34rem; 
+    position: relative;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .containerWrapper::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .container {
+    display: flex; 
+    width: max-content; 
+    position: absolute;
+  }
+
+  .container .box {
+    width: 64rem;  
+    height: 32rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    box-sizing: border-box;
+  }
+
+  .container .box .div1,
+  .container .box .div2 {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 2.5rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.container .div2 {
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.container .box:nth-child(1) .div2 {
+    background-color: rgb(17, 108, 13);
+    color: white;
+}
+
+.container .box:nth-child(2) .div2 {
+    background-color: rgb(255, 187, 0);
+    color: rgb(59, 116, 27);
+}
+
+.container .box:nth-child(3) .div2 {
+    background-color: rgb(63, 194, 255);
+    color: rgb(255, 255, 255);
+}
+
+.container .box:nth-child(4) .div2 {
+    background-color: rgb(111, 23, 114);
+    color: rgb(255, 255, 255);
+}
+
+.container .box:nth-child(5) .div2 {
+    background-color: rgb(45, 45, 45);
+    color: rgb(255, 255, 255);
+}
+
+.container .box:nth-child(6) .div2 {
+    background-color: rgb(130, 78, 20);
+    color: rgb(255, 255, 255);
+}
+
+.container .box .div1 img,
+.container .box .div2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.sectionOne {
+    width: 100%;
+    height: 100%;
+    padding: 4rem 5%;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.sectionOne h2 {
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 100;
+    color:rgb(85, 85, 85);
+    text-transform: uppercase;
+}
+
+.homeRight {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+
+.sectionOne .topImage {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.sectionOne p {
+    width: 70%;
+    height: 30%;
+    font-size: .7rem;
+    line-height: 1;
+    box-sizing: border-box;
+    padding: 2rem 0 0 2rem;
+    transform: translate(4rem, -2rem);
+    opacity: .5;
+}
+
+.sectionTwo {
+    width: 100%;
+    height: auto;
+    padding: 10rem 4rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    gap: 4rem;
+    color:rgb(85, 85, 85);
+}
+
+.sectionTwo .box {
+    width: 80%;
+    height: auto;
+    position: relative;
+    transform: translateX(2rem);
+}
+
+
+.sectionTwo .box sup {
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 600;
+    color: rgba(211, 157, 134, 0.3);
+    top: -2.5rem;
+    left: -3rem;
+    line-height: 1;
+}
+
+.sectionTwo .box h4, 
+.sectionTwo .box p {
+    margin: 0;
+} 
+
+.sectionTwo .box h4 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.sectionTwo .box p {
+    font-size: .8rem;
+    line-height: 1.5;
+}
+
+.sectionThree {
+    width: 100%;
+    height: 100%;
+    padding: 8rem 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(217, 191, 168);
+    gap: 2rem;
+    position: relative;
+}
+
+.sectionThree .imageWrapper {
+    width: 18rem;
+    height: 35rem;
+    padding: 0 1rem;
+    overflow: hidden;
+    position: absolute;
+    top: -5rem;
+    left: 0;
+}
+
+.sectionThree .imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.sectionThree .content {
+    padding: 25rem 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sectionThree .content h2 {
+    font-weight: 200;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.sectionThree .content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 600px) {
+    .sectionOne {
+        flex-direction: row;
+    }
+
+    .sectionOne h2 {
+        width: 50%;
+    }
+
+    .homeRight {
+        width: 50%;
+    }
+
+    .sectionOne p {
+        width: 80%;
+        height: 30%;
+        font-size: .8rem;
+        line-height: 1.2;
+        box-sizing: border-box;
+        padding: 2rem 0 0 2rem;
+        transform: translate(0);
+        opacity: .5;
+    }
+    
+    
+    .sectionTwo .box {
+        width: 40%;
+    }
+
+    .sectionThree {
+        height: 100%;
+        padding: 6rem 2rem;
+        align-items: flex-start;
+    }
+    .sectionThree .content {
+        padding: 0;
+    }
+
+    .sectionThree .imageWrapper {
+        padding: 0;
+        position: static;
+        transform: translateY(-8rem);
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    
+    .sectionThree {
+        height: 100%;
+        padding: 6rem 2rem;
+        align-items: flex-start;
+    }
+    .sectionThree .content {
+        padding: 0;
+    }
+
+    .sectionThree .imageWrapper {
+        padding: 0;
+        position: static;
+        transform: translateY(-8rem);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .containerWrapper {
+        height: 100vh; 
+        position: relative;
+        overflow: hidden;
+      }
+      
+    .container .box {
+        width: 100vw;  
+        height: 100vh; 
+    }
+
+    .sectionOne {
+        height: 100vh;
+        min-height: 40rem;
+    }
+
+    .sectionOne h2 {
+        width: 50%;
+        font-size: 5rem;
+    }
+
+    .sectionTwo {
+        flex-wrap: nowrap;
+    }
+    .sectionTwo .box {
+        width: 20%;
+    }
+
+    .sectionThree {
+        padding: 8rem 2rem;
+    }
+
+    .sectionThree .imageWrapper {
+        width: 40%;
+        height: 100%;
+        padding: 0 2rem;
+        position: absolute;
+        transform: translateY(0);
+    }
+
+    .sectionThree .content {
+        padding: 0 0 0 50%;
+    }
+}

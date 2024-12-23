@@ -25,7 +25,7 @@ export default function GiftCard() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: giftcard,
-          start: "top 50%",
+          start: "top 80%",
           end: "bottom top",
           toggleActions: "play none none none",
           markers: false,
@@ -72,7 +72,7 @@ export default function GiftCard() {
                 duration: 1,
                 ease: "power3.out",
               },
-              "-=.3" // Correct relative positioning inside the method
+              "-=.3"
             );
           }
         });
@@ -124,13 +124,13 @@ export default function GiftCard() {
       <div className={styles.cardContainer}>
         <div className={styles.sliderSection} ref={giftcardRef}>
           <div className={styles.wave1}>
-            <img src={"./images/wave1.svg"} alt='' />
+            <img src={"/images/wave1.svg"} alt='' />
           </div>
           <div className={styles.wave2}>
-            <img src={"./images/wave2.svg"} alt='' />
+            <img src={"/images/wave2.svg"} alt='' />
           </div>
           <div className={styles.image}>
-            <img src='./images/headphones-2.png' alt='' />
+            <img src='/images/headphones-2.png' alt='' />
           </div>
           <div className={styles.contentText}>
             <div className={`${styles.title} ${styles.animatedText}`}>

@@ -7,11 +7,11 @@ export default function ReturnHome({ color }: { color: string }) {
     <Link href={"https://animations.nchernysheva.com"}>
       <div
         style={{
-          position: "fixed",
+          position: "absolute",
           left: "1rem",
           top: "1rem",
           fontSize: "1.5rem",
-          zIndex: "1000",
+          zIndex: "100",
           color: color,
         }}
       >

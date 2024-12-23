@@ -119,20 +119,23 @@
 }
 
 .promo {
-  width: 95%;
+  width: auto;
   height: 100%;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
 }
 
 .innerPromo {
   width: 100%;
+  max-width: 32rem;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   box-sizing: border-box;
   font-weight: 800;
   color: rgb(56, 58, 70);
@@ -179,6 +182,15 @@
     flex-direction: row;
   }
 
+  .promo {
+    width: 40%;
+    align-items: flex-start;
+  }
+
+  .innerPromo {
+    justify-content: flex-start;
+  }
+
   .cardContainer {
     width: 35rem;
     height: 25rem;
@@ -186,7 +198,5 @@
     position: relative;
     margin: 0 auto;
   }
-  .promo {
-    width: 40%;
-  }
+
 }
